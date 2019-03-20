@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>regexp</title>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		.hidden {
+			display: none;
+		}
+		.red-border {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark"><br><br>
+		<div class="container">
+			<a class="navbar-brand" href="#">Валидация формы</a>
+		</div>
+	</nav><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<form id="myForm" >
+					<div class="form-group">
+						<label for="name">Имя</label>
+						<input type="text" class="form-control" name="name" placeholder="Введите имя" id="name">
+						<small id="nameHelp" class="form-text text-muted hidden">Имя должно содержать только буквы!</small>
+					</div>
+					<div class="form-group">
+						<label for="mail">E-mail</label>
+						<input type="text" class="form-control" name="email" placeholder="Введите e-mail" id="mail">
+						<small id="emailHelp" class="form-text text-muted hidden">E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</small>
+					</div>
+					<div class="form-group">
+						<label for="phone">Телефон</label>
+						<input type="text" class="form-control" name="phone" placeholder="Введите телефон" id="phone">
+						<small id="phoneHelp" class="form-text text-muted hidden">Телефон имеет вид +7(000)000-0000</small>
+					</div>			
+					<div class="form-group">
+						<label for="text">Текст сообщения</label>
+						<textarea class="form-control" name="text" rows="3"></textarea>
+						<small id="textHelp" class="form-text text-muted hidden">Поле не может быть пустым</small>
+					</div>
+				<button type="submit" class="btn btn-primary">Отправить</button>
+				</form>				
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
